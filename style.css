@@ -42,7 +42,7 @@ html {
     /* position stays the same regardless of the screen size */
     position: absolute;
     /* banner is moved up 50% */
-    top: 50%;
+    top: 35%;
     /* banner is then moved left 10% */
     left: 10%;
 }
@@ -81,4 +81,12 @@ html {
     width: 20rem;
     height: 7rem;
     background-color: rgb(12, 153, 218);
+    border: none;
+    font-family: sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: seashell;
+    text-shadow: 0 0.2rem 0.4rem rgba(0,0,0, 0.2);
+    box-shadow: 0 0.2rem 0.4rem rgba(0,0,0, 0.2);
+    cursor: pointer;
 }
