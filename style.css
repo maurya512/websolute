@@ -28,7 +28,11 @@ html {
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
+	transition: right 0.6s;
+}
 
+.change .hamburger-menu {
+	right: 31rem;
 }
 
 .line {
@@ -53,9 +57,9 @@ html {
 	position: fixed;
 	top: 0;
 	right: -40rem;
-	background-color: bisque;
+	background-color: blanchedalmond;
 	transition: right 0.5s;
-	/* z-index: 100; */
+	z-index: 100;
 }
 
 
@@ -173,8 +177,8 @@ html {
 .banner {
 	/* position stays the same regardless of the screen size */
 	position: absolute;
-	/* banner is moved up 50% */
-	top: 35%;
+	/* banner is moved up 15% */
+	top: 15%;
 	/* banner is then moved left 10% */
 	left: 10%;
 }
