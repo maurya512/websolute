@@ -43,6 +43,85 @@ html {
 	height: 100vh;
 	position: relative;
     perspective: 100rem;
+    /* gets rid of the scroll bar */
+    overflow: hidden;
+}
+
+.sidebar {
+	width: 40rem;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	right: -40rem;
+	background-color: bisque;
+	transition: right 0.5s;
+	/* z-index: 100; */
+}
+
+
+.change .sidebar {
+	right: 0;
+}
+
+.menu {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.menu-item {
+	text-align: center;
+}
+
+.menu-link::before {
+	content: attr(data-content);
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: rgb(12, 153, 218);
+	width: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	transition: width 0.3s ease-in-out;
+}
+
+.menu-link:hover::before {
+	width: 100%;
+}
+
+.menu-link {
+	font-family: 'Roboto Mono' , serif;
+	font-size: 4rem;
+	color: #555;
+	position: relative;
+}
+
+.social-media {
+	position: absolute;
+	bottom: 3rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.social-media i {
+	font-size: 2.2rem;
+	margin: 3rem;
+	width: 4.5rem;
+	height: 4.5rem;
+	background-color: #777;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	/* transition for hover effect */
+	transition: background-color 0.3s;
+}
+
+.social-media i:hover {
+	background-color: rgb(12, 153, 218);
 }
 
 .img-wrapper {
