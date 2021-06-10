@@ -22,12 +22,12 @@ html {
 	position: fixed;
 	top: 5rem;
 	right: 5rem;
-    /* make the lines visible */
-    z-index: 200;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    cursor: pointer;
+	/* make the lines visible */
+	z-index: 200;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	cursor: pointer;
 	transition: right 0.6s;
 }
 
@@ -36,19 +36,19 @@ html {
 }
 
 .line {
-    width: 75%;
-    height: 0.2rem;
-    background-color: seashell;
-    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+	width: 75%;
+	height: 0.2rem;
+	background-color: seashell;
+	box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
 }
 
 .header {
 	width: 100%;
 	height: 100vh;
 	position: relative;
-    perspective: 100rem;
-    /* gets rid of the scroll bar */
-    overflow: hidden;
+	perspective: 100rem;
+	/* gets rid of the scroll bar */
+	overflow: hidden;
 }
 
 .sidebar {
@@ -61,7 +61,6 @@ html {
 	transition: right 0.5s;
 	z-index: 100;
 }
-
 
 .change .sidebar {
 	right: 0;
@@ -95,7 +94,7 @@ html {
 }
 
 .menu-link {
-	font-family: 'Roboto Mono' , serif;
+	font-family: 'Roboto Mono', serif;
 	font-size: 4rem;
 	color: #555;
 	position: relative;
@@ -133,8 +132,8 @@ html {
 	height: 100%;
 	/* black color with 0.8 opacity */
 	background-color: rgba(0, 0, 0, 0.8);
-    /* stops the image from overflowing out of the screens */
-    overflow: hidden;
+	/* stops the image from overflowing out of the screens */
+	overflow: hidden;
 }
 
 /* accesses the image inside of the image wrapper container */
@@ -146,32 +145,31 @@ html {
 	object-fit: cover;
 	/* reduce the opacity of the image to give it a background image */
 	opacity: 0.4;
-    animation: scale 25s;
+	animation: scale 25s;
 }
 
 /* background image animation */
 @keyframes scale {
-    /* the image starts with a scale of 1.5 */
-    0% {
-        transform: scale(1.5);
-    }
-    /* the image ends with a scale of 1 */
-    100% {
-        transform: scale(1);
-    }
+	/* the image starts with a scale of 1.5 */
+	0% {
+		transform: scale(1.5);
+	}
+	/* the image ends with a scale of 1 */
+	100% {
+		transform: scale(1);
+	}
 }
 
 /* css keyframe to move the image from bottom to the top */
 @keyframes moveBanner {
-    /* move the elements down */
-    0% {
-        transform: translateY(40rem) rotatey(-20deg);
-    }
-    100% {
-        transform: translateY(0)
-        rotateY(0);
-        opacity: 1;
-    }
+	/* move the elements down */
+	0% {
+		transform: translateY(40rem) rotatey(-20deg);
+	}
+	100% {
+		transform: translateY(0) rotateY(0);
+		opacity: 1;
+	}
 }
 
 .banner {
@@ -183,6 +181,61 @@ html {
 	left: 10%;
 }
 
+.change .line {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* edit the three lines that toggles the sidebar to shape 'x' using css properties */
+/* once we select the icon the first line animates */
+.change .line-1 {
+	transform: rotate(45deg) /* change size from 0.3rem to 0.8rem */
+		translate(0.3rem, 0.8rem);
+}
+
+/* animation for line 2 */
+.change .line-2 {
+	opacity: 0;
+	visibility: hidden;
+}
+
+/* animation for line 3 */
+.change .line-3 {
+	transform: rotate(-45deg) translate(0.3rem, -0.8rem);
+}
+
+.hamburger-menu span {
+	position: absolute;
+	left: 5rem;
+	width: 7rem;
+	height: 2.5rem;
+	background-color: rgb(12, 153, 218);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.8);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 1.5rem;
+	letter-spacing: 0.1rem;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.2s;
+}
+
+.change .hamburger-menu:hover span {
+	opacity: 1;
+	visibility: visible;
+}
+
+.hamburger-menu span::before {
+	content: '';
+	position: absolute;
+	border-left: 1rem solid transparent;
+	border-right: 1rem solid rgb(12, 153, 218);
+	border-top: 1rem solid transparent;
+	top: 50%;
+	left: -2rem;
+	transform: translateY(-50%);
+}
 .banner h1 {
 	/* font of the h1 tag */
 	font-family: 'Roboto Mono', serif;
@@ -198,8 +251,8 @@ html {
 	line-height: 8rem;
 	letter-spacing: 0.2rem;
 	text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
-    opacity: 0;
-    animation: moveBanner 1s 0.5s forwards;
+	opacity: 0;
+	animation: moveBanner 1s 0.5s forwards;
 }
 
 .banner p {
@@ -214,8 +267,8 @@ html {
 	letter-spacing: 0.1rem;
 	margin-bottom: 3rem;
 	text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
-    opacity: 0;
-    animation: moveBanner 1s 0.7s forwards;
+	opacity: 0;
+	animation: moveBanner 1s 0.7s forwards;
 }
 
 .banner button {
@@ -230,6 +283,6 @@ html {
 	text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
 	box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
 	cursor: pointer;
-    opacity: 0;
-    animation: moveBanner 1s 0.9s forwards;
+	opacity: 0;
+	animation: moveBanner 1s 0.9s forwards;
 }
