@@ -332,6 +332,33 @@ html {
 	margin-bottom: 2rem;
 }
 
+.service-header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.service-header i {
+	font-size: 4rem;
+	color: #4b4b4b;
+	margin-right: 2rem;
+}
+
+.service-header h3 {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 3rem;
+	line-height: 3rem;
+	font-weight: 400;
+	margin-bottom: 2rem;
+}
+
+.service-header p {
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 1.6rem;
+	text-align: justify;
+	font-wei
+}
+
 /* adjust the size of the image */
 .about-us-img-wrapper {
 	grid-column: 7 /11;
