@@ -406,100 +406,224 @@ html {
 /* team section */
 
 .team {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 5rem 20rem 5rem;
-  background-color: rgb(248, 247, 247);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0 5rem 20rem 5rem;
+	background-color: rgb(248, 247, 247);
 }
 
 .cards-wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 8rem;
-  width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 8rem;
+	width: 100%;
 }
 
 .card {
-  width: 37rem;
-  height: 45rem;
-  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
-  border-radius: 0.5rem;
-  position: relative;
+	width: 37rem;
+	height: 45rem;
+	box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.4);
+	border-radius: 0.5rem;
+	position: relative;
 }
 
 .card-img-wrapper {
-  width: 100%;
-  height: 100%;
-  background-color: #262626;
-  border-radius: 0.5rem;
+	width: 100%;
+	height: 100%;
+	background-color: #262626;
+	border-radius: 0.5rem;
 }
 
 .card-img-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.8;
-  border-radius: 0.5rem;
-  transition: opacity 0.3s;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.8;
+	border-radius: 0.5rem;
+	transition: opacity 0.3s;
 }
 
 .card:hover .card-img-wrapper img {
-  opacity: 0.5;
+	opacity: 0.5;
 }
 
 .card-info {
-  position: absolute;
-  bottom: 0;
-  padding: 2rem;
-  text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s;
+	position: absolute;
+	bottom: 0;
+	padding: 2rem;
+	text-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s;
 }
 
 .card:hover .card-info {
-  bottom: 2rem;
-  opacity: 1;
-  visibility: visible;
+	bottom: 2rem;
+	opacity: 1;
+	visibility: visible;
 }
 
 .card-info h2 {
-  font-family: "Baloo Da 2", serif;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  font-weight: 300;
-  color: #eee;
+	font-family: 'Baloo Da 2', serif;
+	font-size: 2.5rem;
+	line-height: 2.5rem;
+	font-weight: 300;
+	color: #eee;
 }
 
 .card-info h3 {
-  font-family: "Muli", serif;
-  font-size: 2rem;
-  font-weight: 500;
-  color: rgb(163, 54, 14);
-  margin-bottom: 1rem;
+	font-family: 'Muli', serif;
+	font-size: 2rem;
+	font-weight: 500;
+	color: rgb(163, 54, 14);
+	margin-bottom: 1rem;
 }
 
 .card-info p {
-  font-family: "Baloo da 2", serif;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-  font-weight: 300;
-  color: blanchedalmond;
-  width: 80%;
-  margin-bottom: 2rem;
+	font-family: 'Baloo da 2', serif;
+	font-size: 1.4rem;
+	line-height: 1.6rem;
+	font-weight: 300;
+	color: blanchedalmond;
+	width: 80%;
+	margin-bottom: 2rem;
 }
 
 .card-info button {
-  width: 10rem;
-  height: 3rem;
-  background-color:rgb(12, 153, 218);
-  border: none;
-  font-family: "Baloo Da 2", serif;
-  font-size: 1.4rem;
-  line-height: 1.5rem;
-  color: #eee;
-  border-radius: 0.3rem;
-  box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+	width: 10rem;
+	height: 3rem;
+	background-color: rgb(12, 153, 218);
+	border: none;
+	font-family: 'Baloo Da 2', serif;
+	font-size: 1.4rem;
+	line-height: 1.5rem;
+	color: #eee;
+	border-radius: 0.3rem;
+	box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+}
+
+/* styling for the contact form */
+.contact {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-wrapper {
+	width: 60%;
+	height: 75rem;
+	display: flex;
+	box-shadow: 0 3rem 7rem rgba(0, 0, 0, 0.8);
+}
+
+/* left portion of the contact form */
+.contact-left {
+	width: 35%;
+	background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
+		url(images/bg3.jpg) center no-repeat;
+	background-size: cover;
+}
+
+/* right portion of the contact form */
+.contact-right {
+	width: 65;
+	background-color: #eee;
+	padding: 3rem 10rem 10rem 10rem;
+}
+
+.contact-heading {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 6rem;
+	font-weight: 300;
+	color: rgb(12, 153, 218);
+	margin-bottom: 5rem;
+	text-align: center;
+}
+
+.contact-right form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* styling for the input section of the form */
+.input-group {
+	position: relative;
+}
+
+.field {
+	width: 45rem;
+	background-color: transparent;
+	border: none;
+	border-bottom: 0.2rem dashed #636363;
+	margin: 3rem 0;
+	padding: 1rem 1rem 1rem 0;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
+	font-size: 1.6rem;
+	color: #4b4b4b;
+}
+
+.input-group input {
+	height: 4rem;
+}
+
+.input-group textarea {
+	max-height: 7rem;
+	max-width: 45rem;
+}
+
+.field:focus {
+	border-bottom-style: solid;
+}
+
+.input-group label {
+	position: absolute;
+	left: 0;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 1.8rem;
+	color: #4b4b4b;
+	text-transform: uppercase;
+	pointer-events: none;
+	transition: all 0.3s;
+}
+
+.input-label {
+	bottom: 3rem;
+}
+
+.message {
+	bottom: 6rem;
+}
+
+.field:focus ~ label {
+	transform: translateY(-3rem);
+	font-size: 1.2rem;
+}
+
+.submit-btn {
+	width: 45rem;
+	height: 5rem;
+	background-color: rgb(12, 153, 218);
+	color: #fff;
+	border: none;
+	margin-top: 2rem;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 2rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	cursor: pointer;
+	text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
 }
