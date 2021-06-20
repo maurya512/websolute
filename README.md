@@ -1,7 +1,6 @@
 # Websolute
 
 ## A brochure website for small business to showcase their products and services. 
-
 <br />
 
 - This website was created using HTML, CSS and Javascript.
