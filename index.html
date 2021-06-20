@@ -224,21 +224,24 @@
                 <div class="contact-right">
                     <h1 class="contact-heading">Contact</h1>
                     <!-- form element -->
-                    <form>
+                    <form id="my-form">
                         <div class="input-group">
-                            <input type="text" class="field" />
+                            <input type="text" class="field" id="name" />
                             <label class="input-label">Full Name</label>
                         </div>
                         <div class="input-group">
-                            <input type="email" class="field" />
+                            <input type="email" class="field" id="useremail"/>
                             <label class="input-label">Email</label>
                         </div>
                         <div class="input-group">
-                            <textarea class="field"></textarea>
+                            <textarea class="field" id="usermsg"></textarea>
                             <label class="message">Message</label>
                         </div>
                         <input type="submit" class="submit-btn" value="Submit" />
                     </form>
+
+                    <!-- temp ul that displays all the users that sent us a message -->
+                    <ul id="users"></ul>
                 </div>
             </div>
         </section>
